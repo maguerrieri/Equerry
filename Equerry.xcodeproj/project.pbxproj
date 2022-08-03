@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACE75E8D289AD413007B3167 /* EquerryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* EquerryApp.swift */; };
+		ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8E289AD413007B3167 /* Persistence.swift */; };
+		ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */; };
+		ACE75E94289AD413007B3167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E93289AD413007B3167 /* ContentView.swift */; };
+		ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E95289AD414007B3167 /* Assets.xcassets */; };
+		ACE75E9A289AD414007B3167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E99289AD414007B3167 /* Preview Assets.xcassets */; };
+		ACE75EA4289AD415007B3167 /* EquerryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EA3289AD415007B3167 /* EquerryTests.swift */; };
+		ACE75EAE289AD415007B3167 /* EquerryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EAD289AD415007B3167 /* EquerryUITests.swift */; };
+		ACE75EB0289AD415007B3167 /* EquerryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACE75EA0289AD415007B3167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE75E81289AD413007B3167 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE75E88289AD413007B3167;
+			remoteInfo = Equerry;
+		};
+		ACE75EAA289AD415007B3167 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE75E81289AD413007B3167 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE75E88289AD413007B3167;
+			remoteInfo = Equerry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACE75E89289AD413007B3167 /* Equerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE75E8C289AD413007B3167 /* EquerryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryApp.swift; sourceTree = "<group>"; };
+		ACE75E8E289AD413007B3167 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Equerry.xcdatamodel; sourceTree = "<group>"; };
+		ACE75E93289AD413007B3167 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACE75E95289AD414007B3167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE75E97289AD414007B3167 /* Equerry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Equerry.entitlements; sourceTree = "<group>"; };
+		ACE75E99289AD414007B3167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACE75E9F289AD415007B3167 /* EquerryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquerryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE75EA3289AD415007B3167 /* EquerryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryTests.swift; sourceTree = "<group>"; };
+		ACE75EA9289AD415007B3167 /* EquerryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquerryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE75EAD289AD415007B3167 /* EquerryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITests.swift; sourceTree = "<group>"; };
+		ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE75E86289AD413007B3167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE75E9C289AD415007B3167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE75EA6289AD415007B3167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACE75E80289AD413007B3167 = {
+			isa = PBXGroup;
+			children = (
+				ACE75E8B289AD413007B3167 /* Equerry */,
+				ACE75EA2289AD415007B3167 /* EquerryTests */,
+				ACE75EAC289AD415007B3167 /* EquerryUITests */,
+				ACE75E8A289AD413007B3167 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE75E8A289AD413007B3167 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE75E89289AD413007B3167 /* Equerry.app */,
+				ACE75E9F289AD415007B3167 /* EquerryTests.xctest */,
+				ACE75EA9289AD415007B3167 /* EquerryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE75E8B289AD413007B3167 /* Equerry */ = {
+			isa = PBXGroup;
+			children = (
+				ACE75E8C289AD413007B3167 /* EquerryApp.swift */,
+				ACE75E8E289AD413007B3167 /* Persistence.swift */,
+				ACE75E93289AD413007B3167 /* ContentView.swift */,
+				ACE75E95289AD414007B3167 /* Assets.xcassets */,
+				ACE75E97289AD414007B3167 /* Equerry.entitlements */,
+				ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */,
+				ACE75E98289AD414007B3167 /* Preview Content */,
+			);
+			path = Equerry;
+			sourceTree = "<group>";
+		};
+		ACE75E98289AD414007B3167 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACE75E99289AD414007B3167 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACE75EA2289AD415007B3167 /* EquerryTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE75EA3289AD415007B3167 /* EquerryTests.swift */,
+			);
+			path = EquerryTests;
+			sourceTree = "<group>";
+		};
+		ACE75EAC289AD415007B3167 /* EquerryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE75EAD289AD415007B3167 /* EquerryUITests.swift */,
+				ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */,
+			);
+			path = EquerryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACE75E88289AD413007B3167 /* Equerry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE75EB3289AD415007B3167 /* Build configuration list for PBXNativeTarget "Equerry" */;
+			buildPhases = (
+				ACE75E85289AD413007B3167 /* Sources */,
+				ACE75E86289AD413007B3167 /* Frameworks */,
+				ACE75E87289AD413007B3167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Equerry;
+			productName = Equerry;
+			productReference = ACE75E89289AD413007B3167 /* Equerry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACE75E9E289AD415007B3167 /* EquerryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE75EB6289AD415007B3167 /* Build configuration list for PBXNativeTarget "EquerryTests" */;
+			buildPhases = (
+				ACE75E9B289AD415007B3167 /* Sources */,
+				ACE75E9C289AD415007B3167 /* Frameworks */,
+				ACE75E9D289AD415007B3167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE75EA1289AD415007B3167 /* PBXTargetDependency */,
+			);
+			name = EquerryTests;
+			productName = EquerryTests;
+			productReference = ACE75E9F289AD415007B3167 /* EquerryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACE75EA8289AD415007B3167 /* EquerryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE75EB9289AD415007B3167 /* Build configuration list for PBXNativeTarget "EquerryUITests" */;
+			buildPhases = (
+				ACE75EA5289AD415007B3167 /* Sources */,
+				ACE75EA6289AD415007B3167 /* Frameworks */,
+				ACE75EA7289AD415007B3167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE75EAB289AD415007B3167 /* PBXTargetDependency */,
+			);
+			name = EquerryUITests;
+			productName = EquerryUITests;
+			productReference = ACE75EA9289AD415007B3167 /* EquerryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE75E81289AD413007B3167 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					ACE75E88289AD413007B3167 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					ACE75E9E289AD415007B3167 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = ACE75E88289AD413007B3167;
+					};
+					ACE75EA8289AD415007B3167 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = ACE75E88289AD413007B3167;
+					};
+				};
+			};
+			buildConfigurationList = ACE75E84289AD413007B3167 /* Build configuration list for PBXProject "Equerry" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACE75E80289AD413007B3167;
+			productRefGroup = ACE75E8A289AD413007B3167 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE75E88289AD413007B3167 /* Equerry */,
+				ACE75E9E289AD415007B3167 /* EquerryTests */,
+				ACE75EA8289AD415007B3167 /* EquerryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE75E87289AD413007B3167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE75E9A289AD414007B3167 /* Preview Assets.xcassets in Resources */,
+				ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE75E9D289AD415007B3167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE75EA7289AD415007B3167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE75E85289AD413007B3167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE75E8D289AD413007B3167 /* EquerryApp.swift in Sources */,
+				ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */,
+				ACE75E94289AD413007B3167 /* ContentView.swift in Sources */,
+				ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE75E9B289AD415007B3167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE75EA4289AD415007B3167 /* EquerryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE75EA5289AD415007B3167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE75EB0289AD415007B3167 /* EquerryUITestsLaunchTests.swift in Sources */,
+				ACE75EAE289AD415007B3167 /* EquerryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACE75EA1289AD415007B3167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE75E88289AD413007B3167 /* Equerry */;
+			targetProxy = ACE75EA0289AD415007B3167 /* PBXContainerItemProxy */;
+		};
+		ACE75EAB289AD415007B3167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE75E88289AD413007B3167 /* Equerry */;
+			targetProxy = ACE75EAA289AD415007B3167 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACE75EB1289AD415007B3167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACE75EB2289AD415007B3167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ACE75EB4289AD415007B3167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Equerry/Equerry.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Equerry/Preview Content\"";
+				DEVELOPMENT_TEAM = S2N2NBS473;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.Equerry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE75EB5289AD415007B3167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Equerry/Equerry.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Equerry/Preview Content\"";
+				DEVELOPMENT_TEAM = S2N2NBS473;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.Equerry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACE75EB7289AD415007B3167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2N2NBS473;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Equerry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Equerry";
+			};
+			name = Debug;
+		};
+		ACE75EB8289AD415007B3167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2N2NBS473;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Equerry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Equerry";
+			};
+			name = Release;
+		};
+		ACE75EBA289AD415007B3167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2N2NBS473;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Equerry;
+			};
+			name = Debug;
+		};
+		ACE75EBB289AD415007B3167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2N2NBS473;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Equerry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACE75E84289AD413007B3167 /* Build configuration list for PBXProject "Equerry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE75EB1289AD415007B3167 /* Debug */,
+				ACE75EB2289AD415007B3167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE75EB3289AD415007B3167 /* Build configuration list for PBXNativeTarget "Equerry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE75EB4289AD415007B3167 /* Debug */,
+				ACE75EB5289AD415007B3167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE75EB6289AD415007B3167 /* Build configuration list for PBXNativeTarget "EquerryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE75EB7289AD415007B3167 /* Debug */,
+				ACE75EB8289AD415007B3167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE75EB9289AD415007B3167 /* Build configuration list for PBXNativeTarget "EquerryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE75EBA289AD415007B3167 /* Debug */,
+				ACE75EBB289AD415007B3167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */,
+			);
+			currentVersion = ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */;
+			path = Equerry.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACE75E81289AD413007B3167 /* Project object */;
+}
