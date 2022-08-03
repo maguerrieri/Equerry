@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACE75E8D289AD413007B3167 /* EquerryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* EquerryApp.swift */; };
+		AC1B7696289AE0E20036187D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B7695289AE0E20036187D /* Result.swift */; };
+		ACE75E8D289AD413007B3167 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* App.swift */; };
 		ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8E289AD413007B3167 /* Persistence.swift */; };
 		ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */; };
-		ACE75E94289AD413007B3167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E93289AD413007B3167 /* ContentView.swift */; };
+		ACE75E94289AD413007B3167 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E93289AD413007B3167 /* RootView.swift */; };
 		ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E95289AD414007B3167 /* Assets.xcassets */; };
 		ACE75E9A289AD414007B3167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E99289AD414007B3167 /* Preview Assets.xcassets */; };
 		ACE75EA4289AD415007B3167 /* EquerryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EA3289AD415007B3167 /* EquerryTests.swift */; };
 		ACE75EAE289AD415007B3167 /* EquerryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EAD289AD415007B3167 /* EquerryUITests.swift */; };
 		ACE75EB0289AD415007B3167 /* EquerryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */; };
+		ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EBC289AD621007B3167 /* Bundle.swift */; };
+		ACE75ED5289AD7C8007B3167 /* BattlescribeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75ED4289AD7C8007B3167 /* BattlescribeFile.swift */; };
+		ACE75ED8289AD9B7007B3167 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = ACE75ED7289AD9B7007B3167 /* XMLCoder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC1B7695289AE0E20036187D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		ACE75E89289AD413007B3167 /* Equerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACE75E8C289AD413007B3167 /* EquerryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryApp.swift; sourceTree = "<group>"; };
+		ACE75E8C289AD413007B3167 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		ACE75E8E289AD413007B3167 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Equerry.xcdatamodel; sourceTree = "<group>"; };
-		ACE75E93289AD413007B3167 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACE75E93289AD413007B3167 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		ACE75E95289AD414007B3167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE75E97289AD414007B3167 /* Equerry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Equerry.entitlements; sourceTree = "<group>"; };
 		ACE75E99289AD414007B3167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +54,8 @@
 		ACE75EA9289AD415007B3167 /* EquerryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquerryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE75EAD289AD415007B3167 /* EquerryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITests.swift; sourceTree = "<group>"; };
 		ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACE75EBC289AD621007B3167 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		ACE75ED4289AD7C8007B3167 /* BattlescribeFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlescribeFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE75ED8289AD9B7007B3167 /* XMLCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC1B7694289AE0D50036187D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ACE75EBC289AD621007B3167 /* Bundle.swift */,
+				AC1B7695289AE0E20036187D /* Result.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		ACE75E80289AD413007B3167 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +116,15 @@
 		ACE75E8B289AD413007B3167 /* Equerry */ = {
 			isa = PBXGroup;
 			children = (
-				ACE75E8C289AD413007B3167 /* EquerryApp.swift */,
-				ACE75E8E289AD413007B3167 /* Persistence.swift */,
-				ACE75E93289AD413007B3167 /* ContentView.swift */,
+				ACE75E8C289AD413007B3167 /* App.swift */,
 				ACE75E95289AD414007B3167 /* Assets.xcassets */,
+				ACE75ED4289AD7C8007B3167 /* BattlescribeFile.swift */,
 				ACE75E97289AD414007B3167 /* Equerry.entitlements */,
 				ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */,
+				ACE75E8E289AD413007B3167 /* Persistence.swift */,
 				ACE75E98289AD414007B3167 /* Preview Content */,
+				ACE75E93289AD413007B3167 /* RootView.swift */,
+				AC1B7694289AE0D50036187D /* Utility */,
 			);
 			path = Equerry;
 			sourceTree = "<group>";
@@ -151,6 +170,9 @@
 			dependencies = (
 			);
 			name = Equerry;
+			packageProductDependencies = (
+				ACE75ED7289AD9B7007B3167 /* XMLCoder */,
+			);
 			productName = Equerry;
 			productReference = ACE75E89289AD413007B3167 /* Equerry.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +245,9 @@
 				Base,
 			);
 			mainGroup = ACE75E80289AD413007B3167;
+			packageReferences = (
+				ACE75ED6289AD9B7007B3167 /* XCRemoteSwiftPackageReference "XMLCoder" */,
+			);
 			productRefGroup = ACE75E8A289AD413007B3167 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,9 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE75E8D289AD413007B3167 /* EquerryApp.swift in Sources */,
+				ACE75E8D289AD413007B3167 /* App.swift in Sources */,
 				ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */,
-				ACE75E94289AD413007B3167 /* ContentView.swift in Sources */,
+				ACE75E94289AD413007B3167 /* RootView.swift in Sources */,
+				ACE75ED5289AD7C8007B3167 /* BattlescribeFile.swift in Sources */,
+				AC1B7696289AE0E20036187D /* Result.swift in Sources */,
+				ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */,
 				ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +468,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.Equerry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,7 +506,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.Equerry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,6 +648,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACE75ED6289AD9B7007B3167 /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:CoreOffice/XMLCoder.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACE75ED7289AD9B7007B3167 /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACE75ED6289AD9B7007B3167 /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */ = {

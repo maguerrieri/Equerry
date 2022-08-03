@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "xmlcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:CoreOffice/XMLCoder.git",
+      "state" : {
+        "revision" : "ca932442d7481700f5434a7b138c47dd42d9902b",
+        "version" : "0.14.0"
+      }
+    }
+  ],
+  "version" : 2
+}
