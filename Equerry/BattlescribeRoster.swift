@@ -83,14 +83,41 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
                 let id: String
                 let name: String
 
+                enum `Type`: String, Codable {
+                    case artefact = "Artefact"
+                    case weapon = "Weapon"
+                    case unit = "Unit"
+                    case unitAbility = "Unit Abilities"
+                }
+                let type: `Type`
+
+                let characteristics: Characteristics
+
+                struct Characteristics: Codable {
+                    let characteristic: [Characteristic]
+                }
+                struct Characteristic: Codable {
+                    let name: String
+                    let value: String
+
+                    enum CodingKeys: String, CodingKey {
+                        case name
+                        case value = ""
+                    }
+                }
+
                 enum CodingKeys: String, CodingKey {
                     case id
                     case name
+
+                    case type = "typeName"
+
+                    case characteristics
                 }
 
                 fileprivate static func nodeCoding(for key: CodingKey) -> NodeCoding {
                     switch key {
-                        case CodingKeys.id, CodingKeys.name:
+                        case CodingKeys.id, CodingKeys.name, CodingKeys.type:
                             return .attribute
                         default:
                             return .element
@@ -207,7 +234,13 @@ struct BattlescribeRoster_Previews: PreviewProvider {
         let profile: BattlescribeRoster.Force.Selection.Profile
 
         var body: some View {
-            Text(profile.name)
+            Text(self.profile.name)
+
+            Text(self.profile.type.rawValue)
+
+            ForEach(self.profile.characteristics.characteristic, id: \.name) { characteristic in
+                Text("\(characteristic.name): \(characteristic.value)")
+            }
         }
     }
 
