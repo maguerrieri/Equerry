@@ -66,7 +66,7 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
 
         let selections: Selections
 
-        let categories: Categories
+        let categories: Categories?
 
         struct Selections: Codable {
             let selection: [Selection]
@@ -322,7 +322,9 @@ struct BattlescribeRoster_Previews: PreviewProvider {
                             SelectionTester(selection: .success(selection))
                         }
 
-                        CategoriesTester(categories: force.categories.category)
+                        if let categories = force.categories {
+                            CategoriesTester(categories: categories.category)
+                        }
                     }
                 case .failure(let error):
                     Text("\(String(reflecting: error))")
