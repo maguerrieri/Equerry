@@ -66,6 +66,8 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
 
         let selections: Selections
 
+        let categories: Categories
+
         struct Selections: Codable {
             let selection: [Selection]
         }
@@ -75,6 +77,8 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
 
             let profiles: Profiles?
             let selections: Selections?
+
+            let categories: Categories?
 
             struct Profiles: Codable {
                 let profile: [Profile]
@@ -131,6 +135,7 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
 
                 case profiles
                 case selections
+                case categories
             }
 
             fileprivate static func nodeCoding(for key: CodingKey) -> NodeCoding {
@@ -149,11 +154,20 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
 #endif
         }
 
+        struct Categories: Codable {
+            let category: [Category]
+        }
+        struct Category: Codable, Identifiable {
+            let id: String
+            let name: String
+        }
+
         enum CodingKeys: String, CodingKey {
             case id
             case name
 
             case selections
+            case categories
         }
 
         fileprivate static func nodeCoding(for key: CodingKey) -> NodeCoding {
@@ -244,6 +258,22 @@ struct BattlescribeRoster_Previews: PreviewProvider {
         }
     }
 
+    private struct CategoriesTester: View {
+        let categories: [BattlescribeRoster.Force.Category]
+
+        var body: some View {
+            LazyVGrid(columns: [.init(.adaptive(minimum: 100))]) {
+                ForEach(self.categories) { category in
+                    Text(category.name)
+                        .multilineTextAlignment(.center)
+                        .padding(3)
+                        .background { RoundedRectangle(cornerRadius: 5).fill(.thinMaterial) }
+                        .padding(.vertical, 1)
+                }
+            }
+        }
+    }
+
     private struct SelectionTester: View {
         let selection: Result<BattlescribeRoster.Force.Selection, Error>
 
@@ -265,6 +295,10 @@ struct BattlescribeRoster_Previews: PreviewProvider {
                                 SelectionTester(selection: .success(selection))
                             }
                         }
+
+                        if let categories = selection.categories {
+                            CategoriesTester(categories: categories.category)
+                        }
                     }
                 case .failure(let error):
                     Text("\(String(reflecting: error))")
@@ -285,6 +319,8 @@ struct BattlescribeRoster_Previews: PreviewProvider {
                         ForEach(force.selections.selection) { selection in
                             SelectionTester(selection: .success(selection))
                         }
+
+                        CategoriesTester(categories: force.categories.category)
                     }
                 case .failure(let error):
                     Text("\(String(reflecting: error))")
@@ -311,14 +347,22 @@ struct BattlescribeRoster_Previews: PreviewProvider {
     }
 
     static var previews: some View {
-        ScrollView {
-            RosterTester()
+        Group {
+            ScrollView {
+                RosterTester()
+            }
+            .previewDisplayName("Roster")
+
+            ScrollView {
+                ForceTester(force: BattlescribeRoster.Force.test)
+            }
+            .previewDisplayName("Force")
+
+            ScrollView {
+                SelectionTester(selection: BattlescribeRoster.Force.Selection.test)
+            }
+            .previewDisplayName("Selection")
         }
-        .previewLayout(.sizeThatFits)
-
-        ForceTester(force: BattlescribeRoster.Force.test)
-
-        SelectionTester(selection: BattlescribeRoster.Force.Selection.test)
     }
 }
 
