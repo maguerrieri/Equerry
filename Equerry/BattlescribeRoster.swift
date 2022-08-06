@@ -89,6 +89,8 @@ struct BattlescribeRoster: Codable, DynamicNodeCoding, Identifiable {
 
                 enum `Type`: String, Codable {
                     case artefact = "Artefact"
+                    case battalionAbility = "Battalion Abilities"
+                    case battalionOrganization = "Battalion Organisation"
                     case weapon = "Weapon"
                     case unit = "Unit"
                     case unitAbility = "Unit Abilities"
