@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC1B7696289AE0E20036187D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B7695289AE0E20036187D /* Result.swift */; };
+		AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */ = {isa = PBXBuildFile; fileRef = AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */; };
 		ACE75E8D289AD413007B3167 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* App.swift */; };
 		ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8E289AD413007B3167 /* Persistence.swift */; };
 		ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */; };
@@ -18,7 +19,7 @@
 		ACE75EAE289AD415007B3167 /* EquerryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EAD289AD415007B3167 /* EquerryUITests.swift */; };
 		ACE75EB0289AD415007B3167 /* EquerryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */; };
 		ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EBC289AD621007B3167 /* Bundle.swift */; };
-		ACE75ED5289AD7C8007B3167 /* BattlescribeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75ED4289AD7C8007B3167 /* BattlescribeFile.swift */; };
+		ACE75ED5289AD7C8007B3167 /* BattlescribeRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */; };
 		ACE75ED8289AD9B7007B3167 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = ACE75ED7289AD9B7007B3167 /* XMLCoder */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		AC1B7695289AE0E20036187D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AC1B7698289AF1050036187D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1000-kharadron.ros"; sourceTree = "<group>"; };
 		ACE75E89289AD413007B3167 /* Equerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE75E8C289AD413007B3167 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		ACE75E8E289AD413007B3167 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		ACE75EAD289AD415007B3167 /* EquerryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITests.swift; sourceTree = "<group>"; };
 		ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ACE75EBC289AD621007B3167 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
-		ACE75ED4289AD7C8007B3167 /* BattlescribeFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlescribeFile.swift; sourceTree = "<group>"; };
+		ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlescribeRoster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +121,7 @@
 			children = (
 				ACE75E8C289AD413007B3167 /* App.swift */,
 				ACE75E95289AD414007B3167 /* Assets.xcassets */,
-				ACE75ED4289AD7C8007B3167 /* BattlescribeFile.swift */,
+				ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */,
 				ACE75E97289AD414007B3167 /* Equerry.entitlements */,
 				ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */,
 				AC1B7698289AF1050036187D /* Info.plist */,
@@ -134,6 +136,7 @@
 		ACE75E98289AD414007B3167 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */,
 				ACE75E99289AD414007B3167 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -268,6 +271,7 @@
 			files = (
 				ACE75E9A289AD414007B3167 /* Preview Assets.xcassets in Resources */,
 				ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */,
+				AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +299,7 @@
 				ACE75E8D289AD413007B3167 /* App.swift in Sources */,
 				ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */,
 				ACE75E94289AD413007B3167 /* RootView.swift in Sources */,
-				ACE75ED5289AD7C8007B3167 /* BattlescribeFile.swift in Sources */,
+				ACE75ED5289AD7C8007B3167 /* BattlescribeRoster.swift in Sources */,
 				AC1B7696289AE0E20036187D /* Result.swift in Sources */,
 				ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */,
 				ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */,
