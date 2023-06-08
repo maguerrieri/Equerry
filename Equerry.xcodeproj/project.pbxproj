@@ -10,8 +10,6 @@
 		AC1B7696289AE0E20036187D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B7695289AE0E20036187D /* Result.swift */; };
 		AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */ = {isa = PBXBuildFile; fileRef = AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */; };
 		ACE75E8D289AD413007B3167 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* App.swift */; };
-		ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8E289AD413007B3167 /* Persistence.swift */; };
-		ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */; };
 		ACE75E94289AD413007B3167 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E93289AD413007B3167 /* RootView.swift */; };
 		ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E95289AD414007B3167 /* Assets.xcassets */; };
 		ACE75E9A289AD414007B3167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E99289AD414007B3167 /* Preview Assets.xcassets */; };
@@ -21,6 +19,7 @@
 		ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75EBC289AD621007B3167 /* Bundle.swift */; };
 		ACE75ED5289AD7C8007B3167 /* BattlescribeRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */; };
 		ACE75ED8289AD9B7007B3167 /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = ACE75ED7289AD9B7007B3167 /* XMLCoder */; };
+		ACFB48C02A32A04E007713D0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFB48BF2A32A04E007713D0 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +45,6 @@
 		AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1000-kharadron.ros"; sourceTree = "<group>"; };
 		ACE75E89289AD413007B3167 /* Equerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE75E8C289AD413007B3167 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		ACE75E8E289AD413007B3167 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Equerry.xcdatamodel; sourceTree = "<group>"; };
 		ACE75E93289AD413007B3167 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		ACE75E95289AD414007B3167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE75E97289AD414007B3167 /* Equerry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Equerry.entitlements; sourceTree = "<group>"; };
@@ -59,6 +56,7 @@
 		ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquerryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ACE75EBC289AD621007B3167 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlescribeRoster.swift; sourceTree = "<group>"; };
+		ACFB48BF2A32A04E007713D0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +121,8 @@
 				ACE75E95289AD414007B3167 /* Assets.xcassets */,
 				ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */,
 				ACE75E97289AD414007B3167 /* Equerry.entitlements */,
-				ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */,
 				AC1B7698289AF1050036187D /* Info.plist */,
-				ACE75E8E289AD413007B3167 /* Persistence.swift */,
+				ACFB48BE2A32A030007713D0 /* Model */,
 				ACE75E98289AD414007B3167 /* Preview Content */,
 				ACE75E93289AD413007B3167 /* RootView.swift */,
 				AC1B7694289AE0D50036187D /* Utility */,
@@ -157,6 +154,14 @@
 				ACE75EAF289AD415007B3167 /* EquerryUITestsLaunchTests.swift */,
 			);
 			path = EquerryUITests;
+			sourceTree = "<group>";
+		};
+		ACFB48BE2A32A030007713D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACFB48BF2A32A04E007713D0 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,12 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE75E8D289AD413007B3167 /* App.swift in Sources */,
-				ACE75E92289AD413007B3167 /* Equerry.xcdatamodeld in Sources */,
 				ACE75E94289AD413007B3167 /* RootView.swift in Sources */,
 				ACE75ED5289AD7C8007B3167 /* BattlescribeRoster.swift in Sources */,
 				AC1B7696289AE0E20036187D /* Result.swift in Sources */,
+				ACFB48C02A32A04E007713D0 /* Item.swift in Sources */,
 				ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */,
-				ACE75E8F289AD413007B3167 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,19 +679,6 @@
 			productName = XMLCoder;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		ACE75E90289AD413007B3167 /* Equerry.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */,
-			);
-			currentVersion = ACE75E91289AD413007B3167 /* Equerry.xcdatamodel */;
-			path = Equerry.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = ACE75E81289AD413007B3167 /* Project object */;
 }
