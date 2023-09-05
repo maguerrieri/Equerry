@@ -402,6 +402,18 @@ extension BattlescribeRoster.Force.Selection {
 }
 
 final class BattleScribeRosterTests: XCTestCase {
+    func testAoSSelection() throws {
+        let selection = try BattlescribeRoster.Force.Selection.aosTest.get()
+
+        XCTAssertEqual(selection.categories?.category.first?.name, "DUARDIN")
+
+        let carbine = try XCTUnwrap(selection.selections?.selection.first)
+        XCTAssertEqual(carbine.name, "Aethershot Carbine")
+        let carbineProfile = try XCTUnwrap(carbine.profiles?.profile.first)
+        let carbineCharacteristics = try XCTUnwrap(carbineProfile.characteristics.characteristic)
+        XCTAssertEqual(carbineCharacteristics.first { $0.name == "Range" }?.value, "12\"")
+    }
+
     func testFortyKSelection() throws {
         let selection = try BattlescribeRoster.Force.Selection.fortyKTest.get()
 
