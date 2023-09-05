@@ -21,7 +21,7 @@ struct RootView: View {
                     .fileImporter(isPresented: self.$presentFileImporter,
                                   allowedContentTypes: [ .init(filenameExtension: "ros")! ]) { result in
                         do {
-                            let url = try result.value
+                            let url = try result.get()
                             if url.startAccessingSecurityScopedResource() {
                                 self.document = try XMLDecoder().decode(BattlescribeRoster.self,
                                                                         from: .init(contentsOf: url))

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC1B7696289AE0E20036187D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1B7695289AE0E20036187D /* Result.swift */; };
 		AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */ = {isa = PBXBuildFile; fileRef = AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */; };
 		ACE75E8D289AD413007B3167 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* App.swift */; };
 		ACE75E94289AD413007B3167 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E93289AD413007B3167 /* RootView.swift */; };
@@ -40,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC1B7695289AE0E20036187D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AC1B7698289AF1050036187D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1000-kharadron.ros"; sourceTree = "<group>"; };
 		ACE75E89289AD413007B3167 /* Equerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				ACE75EBC289AD621007B3167 /* Bundle.swift */,
-				AC1B7695289AE0E20036187D /* Result.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 				ACE75E8D289AD413007B3167 /* App.swift in Sources */,
 				ACE75E94289AD413007B3167 /* RootView.swift in Sources */,
 				ACE75ED5289AD7C8007B3167 /* BattlescribeRoster.swift in Sources */,
-				AC1B7696289AE0E20036187D /* Result.swift in Sources */,
 				ACFB48C02A32A04E007713D0 /* Item.swift in Sources */,
 				ACE75EBD289AD621007B3167 /* Bundle.swift in Sources */,
 			);
