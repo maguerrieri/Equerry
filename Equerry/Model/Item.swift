@@ -11,4 +11,8 @@ import SwiftData
 @Model
 class Item {
     let timestamp: Date
+
+    init(timestamp: Date) {
+        self.timestamp = timestamp
+    }
 }
