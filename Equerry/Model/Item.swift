@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 class Item {
-    let timestamp: Date
+    var timestamp: Date
 
     init(timestamp: Date) {
         self.timestamp = timestamp
