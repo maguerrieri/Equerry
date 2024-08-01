@@ -7,7 +7,7 @@
 
 @testable import Equerry
 
-import XCTest
+import Testing
 import XMLCoder
 
 extension BattlescribeRoster.Force.Selection {
@@ -401,30 +401,30 @@ extension BattlescribeRoster.Force.Selection {
 """)
 }
 
-final class BattleScribeRosterTests: XCTestCase {
-    func testAoSSelection() throws {
+struct BattleScribeRosterTests {
+    @Test func testAoSSelection() throws {
         let selection = try BattlescribeRoster.Force.Selection.aosTest.get()
 
-        XCTAssertEqual(selection.categories?.category.first?.name, "DUARDIN")
+        #expect(selection.categories?.category.first?.name == "DUARDIN")
 
-        let carbine = try XCTUnwrap(selection.selections?.selection.first)
-        XCTAssertEqual(carbine.name, "Aethershot Carbine")
-        let carbineProfile = try XCTUnwrap(carbine.profiles?.profile.first)
-        let carbineCharacteristics = try XCTUnwrap(carbineProfile.characteristics.characteristic)
-        XCTAssertEqual(carbineCharacteristics.first { $0.name == "Range" }?.value, "12\"")
+        let carbine = try #require(selection.selections?.selection.first)
+        #expect(carbine.name == "Aethershot Carbine")
+        let carbineProfile = try #require(carbine.profiles?.profile.first)
+        let carbineCharacteristics = try #require(carbineProfile.characteristics.characteristic)
+        #expect(carbineCharacteristics.first { $0.name == "Range" }?.value == "12\"")
     }
 
-    func testFortyKSelection() throws {
+    @Test func testFortyKSelection() throws {
         let selection = try BattlescribeRoster.Force.Selection.fortyKTest.get()
 
-        XCTAssertEqual(selection.categories?.category.first?.name, "Faction: Imperium")
+        #expect(selection.categories?.category.first?.name == "Faction: Imperium")
 
-        let veteran = try XCTUnwrap(selection.selections?.selection.first)
-        XCTAssertEqual(veteran.name, "Bladeguard Veteran")
-        let veteranSelections = try XCTUnwrap(veteran.selections?.selection)
-        let stormShield = try XCTUnwrap(veteranSelections.first)
-        XCTAssertEqual(stormShield.name, "Storm Shield")
-        let stormShieldAbility = try XCTUnwrap(stormShield.profiles?.profile.first?.characteristics.characteristic.first)
-        XCTAssert(stormShieldAbility.value.contains("4+ invulnerable") == true)
+        let veteran = try #require(selection.selections?.selection.first)
+        #expect(veteran.name == "Bladeguard Veteran")
+        let veteranSelections = try #require(veteran.selections?.selection)
+        let stormShield = try #require(veteranSelections.first)
+        #expect(stormShield.name == "Storm Shield")
+        let stormShieldAbility = try #require(stormShield.profiles?.profile.first?.characteristics.characteristic.first)
+        #expect(stormShieldAbility.value.contains("4+ invulnerable"))
     }
 }

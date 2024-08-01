@@ -5,10 +5,10 @@
 //  Created by Mario Guerrieri on 8/3/22.
 //
 
-import XCTest
+import Testing
 
-final class EquerryTests: XCTestCase {
-    func testExample() throws {
+struct EquerryTests {
+    @Test func testExample() throws {
         
     }
 }
