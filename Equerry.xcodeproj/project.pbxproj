@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */ = {isa = PBXBuildFile; fileRef = AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */; };
 		AC034D872AA7C7270069F3FF /* BattleScribeRosterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC034D862AA7C7270069F3FF /* BattleScribeRosterTests.swift */; };
 		AC034D882AA7D5AA0069F3FF /* boarding-patrol-white-scars.ros in Resources */ = {isa = PBXBuildFile; fileRef = AC034D842AA7B4690069F3FF /* boarding-patrol-white-scars.ros */; };
+		AC7F3E7E2CEE7488002C47A8 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AC7F3E7D2CEE7488002C47A8 /* InfoPlist.xcstrings */; };
+		AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */ = {isa = PBXBuildFile; fileRef = AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */; };
 		ACE75E8D289AD413007B3167 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E8C289AD413007B3167 /* App.swift */; };
 		ACE75E94289AD413007B3167 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE75E93289AD413007B3167 /* RootView.swift */; };
 		ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE75E95289AD414007B3167 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		AC034D842AA7B4690069F3FF /* boarding-patrol-white-scars.ros */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "boarding-patrol-white-scars.ros"; sourceTree = "<group>"; };
 		AC034D862AA7C7270069F3FF /* BattleScribeRosterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScribeRosterTests.swift; sourceTree = "<group>"; };
 		AC1B7698289AF1050036187D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC7F3E7D2CEE7488002C47A8 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		AC9F3DAD289EE4DA00B18B01 /* 1000-kharadron.ros */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "1000-kharadron.ros"; sourceTree = "<group>"; };
 		ACE75E89289AD413007B3167 /* Equerry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Equerry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE75E8C289AD413007B3167 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				ACE75ED4289AD7C8007B3167 /* BattlescribeRoster.swift */,
 				ACE75E97289AD414007B3167 /* Equerry.entitlements */,
 				AC1B7698289AF1050036187D /* Info.plist */,
+				AC7F3E7D2CEE7488002C47A8 /* InfoPlist.xcstrings */,
 				ACFB48BE2A32A030007713D0 /* Model */,
 				ACE75E98289AD414007B3167 /* Preview Content */,
 				ACE75E93289AD413007B3167 /* RootView.swift */,
@@ -255,7 +258,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				fr,
 			);
 			mainGroup = ACE75E80289AD413007B3167;
 			packageReferences = (
@@ -279,6 +282,7 @@
 			files = (
 				ACE75E9A289AD414007B3167 /* Preview Assets.xcassets in Resources */,
 				ACE75E96289AD414007B3167 /* Assets.xcassets in Resources */,
+				AC7F3E7E2CEE7488002C47A8 /* InfoPlist.xcstrings in Resources */,
 				AC9F3DAE289EE4DA00B18B01 /* 1000-kharadron.ros in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +405,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
 				MARKETING_VERSION = 0.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -409,6 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.Equerry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
 			};
@@ -462,13 +466,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
 				MARKETING_VERSION = 0.0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.Equerry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 6.0;
 			};
@@ -552,6 +556,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = S2N2NBS473;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,6 +579,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = S2N2NBS473;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,6 +601,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = S2N2NBS473;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,6 +623,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = S2N2NBS473;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = codes.guerrieri.EquerryUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
